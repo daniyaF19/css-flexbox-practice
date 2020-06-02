@@ -1,0 +1,223 @@
+/* body {
+  margin: 0;
+} */
+
+/* .container {
+  border: 6px solid black;
+  display: flex; */
+/* width will be 100%  */
+/* display: inline-flex; wraps up completely,it takes specific width how much it needs... */
+/* flex-direction: row; */
+/* flex-direction sets the direction of the main axis */
+/* row,column,row-reverse,column-reverse */
+/* flex-wrap: nowrap; default no change */
+/* flex-wrap: wrap; wraps up the elements of to the size,if size is more comes down to the next line.. */
+/* flex-wrap: wrap-reverse; instead of items falling below,it climbs in the row above */
+/* flex-flow,it is a short hand for flex direction and flex wrap.. */
+/* flex-flow: row-reverse wrap;
+  flex-flow: column-reverse wrap-reverse;
+  height: 400px;
+  /* justify content mein flex-start,end,center,space-around,betwee,evenly */
+/* justify-content: space-between; */
+/* justify-content defines alignment on the main axis. */
+/* height: 800px; */
+/* align-items mein stretch aako default.. and it works on cross axis.. */
+/* align-items: baseline,flex-end,flex-start; */
+/* align-content is a mixture of justify-content and align-items on cross axis... */
+/* flex-wrap: wrap; */
+/* align-content: flex-start,flex-end,center,space-between wo sab hi so...; */
+/* #flex item properties: order,flex-grow,flex-shrink,flex-basis,flex,align-self.. */
+/* flex is short ahnd of flex-grow,flex-shrink,flex-basis,default is 0 1 auto.. */
+/* height: 400px;
+  align-items: flex-end; */
+/* }
+.flex-item {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center; */
+/* width: 8rem; */
+/* flex-grow: 1; */
+/* flex-shrink: 1; */
+/* }
+.item-1 {
+  background-color: #b4bf35;
+  /* flex-basis: 400px; */
+/* flex: 2 5 200px; */
+/* align-self: flex-start;
+}
+.item-2 {
+  background-color: #b95f21; */
+/* flex-shrink: 4; */
+/* align-self: flex-end;
+} */
+/* .item-3 {
+  background-color: #1c4c56; */
+/* flex-items ki property apply karriso.... order accepts integer value */
+/* order: 1; */
+/* align-self: center;
+}
+.item-4 {
+  background-color: #cfb276;
+}
+.item-5 {
+  background-color: #6b0803; */
+/* order: 4; */
+/* flex-grow: 1; */
+/* }
+.item-6 {
+  background-color: #1c4c56; */
+/* flex-grow: 3; */
+/* }
+.item-7 {
+  background-color: #b95f21; */
+/* order: 2; */
+/* }
+.item-8 {
+  background-color: #01243a;
+} */
+/* .item-9 {
+  background-color: #aad041;
+} */
+/* ###navbar tutorial */
+
+/* nav {
+  font-size: 2rem;
+  background-color: #f1f1f1;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* justify-content: space-around; */
+/* }
+
+nav ul li {
+  cursor: pointer;
+  padding: 0.5rem;
+  flex: auto;
+  text-align: center;
+}
+
+nav ul li:hover {
+  background-color: #555;
+  color: white;
+}
+
+@media all and (max-width: 400px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    text-align: center;
+  }
+} */
+
+/* ##centering item... */
+
+/* .container {
+  height: 400px;
+  width: 400px;
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  height: 80px;
+  width: 80px;
+  border: 3px solid orange;
+} */
+
+/* .container {
+  font-size: 1.5rem;
+  display: flex;
+}
+
+.item1 {
+  background-color: firebrick;
+}
+.item2 {
+  background-color: forestgreen;
+} */
+
+/* .cards {
+  display: flex;
+}
+
+.card {
+  font-size: 1.5rem;
+  border: 4px solid black;
+  margin: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card .body {
+  flex: 1;
+}
+
+.card .footer {
+  padding: 5px;
+  background-color: #f1f1f1;
+} */
+
+/* ##holy grail layout... */
+
+* {
+  margin: 2px;
+}
+
+body {
+  font-size: 24px;
+  color: white;
+  height: 20vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-header {
+  background-color: #5070b5;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.flex-main {
+  display: flex;
+  flex: 1;
+}
+
+.flex-nav {
+  background-color: #b95f21;
+  flex: 1 1 5rem;
+  padding-top: 3rem;
+}
+
+.flex-article {
+  background-color: #81a43c;
+  flex: 3 3;
+  padding-top: 3rem;
+}
+
+.flex-aside {
+  background-color: #b95f21;
+  flex: 1 1 5rem;
+  padding-top: 3rem;
+}
+
+.flex-footer {
+  background-color: #5070b5;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media all and (max-width: 540px) {
+  .flex-main {
+    flex-direction: column;
+  }
+}
